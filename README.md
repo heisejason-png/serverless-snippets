@@ -59,3 +59,4 @@ Important: this application could use various AWS services and there are costs a
 Copyright 2022 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 
 SPDX-License-Identifier: MIT-0
+Created by Jason Scott Heise
