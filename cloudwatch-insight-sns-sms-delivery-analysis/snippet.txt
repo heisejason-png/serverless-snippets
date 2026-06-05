@@ -1,0 +1,6 @@
+fields @timestamp, delivery.destination, delivery.smsType, status, delivery.priceInUSD
+| filter ispresent(delivery.destination)
+| stats count() as messageCount, 
+        sum(coalesce(delivery.priceInUSD, 0)) as totalCostUSD
+        by delivery.smsType, status
+| sort delivery.smsType, status
